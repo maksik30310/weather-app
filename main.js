@@ -1,3 +1,4 @@
-Document.getElementById("input").addEventListener("submit", function() {
-    
-});
+const weatherCard = document.getElementById('weatherCard'):
+
+
+weatherCard.classList.remove('hiddeen');
