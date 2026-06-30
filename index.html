@@ -49,7 +49,31 @@
 
 <main class="flex-grow items-center flex justify-center p-4">
 
-    <article id="weatherCard"  class="hidden bg-slate-500 rounded-3xl p-6 h-100 w-80 gap-4">
+    <article id="weatherCard"  class="hidden  bg-slate-500 rounded-3xl p-6 h-120 w-100 gap-4">
+
+                <section class="flex items-center justify-center mb-6" aria-label="Твоя текущая температура">
+                    <div>
+                        <h2 id="cityName" class="text-xl text-slate-50 uppercase tracking-widest mb-1">Volgograd</h2>
+                        <p class="flrx place-items-baseline">
+                            <span id="tempValue" class="text-5xl font-bold tracking-tighter">+28</span>
+                            <span class="text=2xl text-slate-50 ml-1" aria-label="Градусов Цельсия">C</span>
+                        </p>
+                    </div>
+
+                    <figure class="m-0">
+                        <img id="weatherIcon" src="src/cloudy.png" class="h-16 w-16 object-contain brightness-0 invert opasity-80" alt="Облачно">
+                    </figure>
+                </section>
+
+                <hr class="border-t border-slate-800 w-full mb-6">
+
+                <section   class="grid grid-cols-2 gap-4 text-xs text-slate-50 mb-6" aria-label="Параметры атмосферы">
+                    <div class="FLEX flex-col gap-1">
+                        <span class="text-[10px] text-slate-100 uppercase tracking-wider">Ветер</span>
+                        <strong class="text-white font-bold"><span id="windValue">4.23</span></strong>
+                    </div>
+                </section>
+
     </article>
 
 </main>
